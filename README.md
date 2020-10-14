@@ -1,2 +1,2 @@
 # FizzBuzzAPI
-Repository for Fizz Buzz project
+This is a web API application developed in .Net Core to perform Fizz Buzz logic.
