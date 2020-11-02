@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JerishPJ.FizzBuzz.WebAPI", "JerishPJ.FizzBuzz.WebAPI\JerishPJ.FizzBuzz.WebAPI.csproj", "{49DA9911-8382-4560-9443-1DF8C56C5F5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JerishPJ.FizzBuzz.Services", "JerishPJ.FizzBuzz.Services\JerishPJ.FizzBuzz.Services.csproj", "{CF4E9CE5-2ED1-426C-9087-1C5CF6632EC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JerishPJ.FizzBuzz.Services", "JerishPJ.FizzBuzz.Services\JerishPJ.FizzBuzz.Services.csproj", "{CF4E9CE5-2ED1-426C-9087-1C5CF6632EC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JerishPJ.FizzBuzz.Services.Abstractions", "JerishPJ.FizzBuzz.Services.Abstractions\JerishPJ.FizzBuzz.Services.Abstractions.csproj", "{99A0847D-042C-4C2F-978F-84D16406A9AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{CF4E9CE5-2ED1-426C-9087-1C5CF6632EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF4E9CE5-2ED1-426C-9087-1C5CF6632EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF4E9CE5-2ED1-426C-9087-1C5CF6632EC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99A0847D-042C-4C2F-978F-84D16406A9AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99A0847D-042C-4C2F-978F-84D16406A9AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99A0847D-042C-4C2F-978F-84D16406A9AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99A0847D-042C-4C2F-978F-84D16406A9AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

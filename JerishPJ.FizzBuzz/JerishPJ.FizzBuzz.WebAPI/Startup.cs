@@ -1,3 +1,5 @@
+using JerishPJ.FizzBuzz.Services;
+using JerishPJ.FizzBuzz.Services.Abstractions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -20,6 +22,8 @@ namespace JerishPJ.FizzBuzz.WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddScoped<IFizzBuzzLogicProcessor, FizzBuzzLogicProcessor>();
             
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
