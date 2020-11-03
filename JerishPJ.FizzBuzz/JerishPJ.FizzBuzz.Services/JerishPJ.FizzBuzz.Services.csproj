@@ -8,4 +8,8 @@
     <ProjectReference Include="..\JerishPJ.FizzBuzz.Services.Abstractions\JerishPJ.FizzBuzz.Services.Abstractions.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="BusinessLogic\" />
+  </ItemGroup>
+
 </Project>
