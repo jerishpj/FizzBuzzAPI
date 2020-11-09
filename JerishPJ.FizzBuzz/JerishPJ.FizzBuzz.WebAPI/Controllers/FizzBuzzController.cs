@@ -18,7 +18,7 @@ namespace JerishPJ.FizzBuzz.WebAPI.Controllers
         [HttpGet]
         public IEnumerable<string> Get(int limit = 50)
         {
-            IList<string> fizzbuzzList = (IList<string>)_fizzBuzzLogicProcessor.GetFizzBuzzSeries(limit);
+            IList<string> fizzbuzzList = (IList<string>)_fizzBuzzLogicProcessor.GenerateFizzBuzzSeries(limit);
 
             return fizzbuzzList;
         }

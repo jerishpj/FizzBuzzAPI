@@ -4,6 +4,6 @@ namespace JerishPJ.FizzBuzz.Services.Abstractions
 {
     public interface IFizzBuzzLogicProcessor
     {
-        IEnumerable<string> GetFizzBuzzSeries(int limit);
+        IEnumerable<string> GenerateFizzBuzzSeries(int limit);
     }
 }
