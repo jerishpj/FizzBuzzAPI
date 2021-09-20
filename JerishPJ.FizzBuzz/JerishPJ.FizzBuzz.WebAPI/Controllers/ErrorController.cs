@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 namespace JerishPJ.FizzBuzz.WebAPI.Controllers
 {
     [Route("api/[controller]")]
+    [ApiExplorerSettings(IgnoreApi = true)]
     [ApiController]
     public class ErrorController : ControllerBase
     {
         [Route("/error-local-development")]
-        [HttpGet]
         public IActionResult ErrorLocalDevelopment(
         [FromServices] IWebHostEnvironment webHostEnvironment)
         {
@@ -32,7 +32,6 @@ namespace JerishPJ.FizzBuzz.WebAPI.Controllers
         }
 
         [Route("/error")]
-        [HttpGet]
         public IActionResult Error() => Problem();
     }
 }
