@@ -13,23 +13,22 @@ namespace JerishPJ.FizzBuzz.Services
             _calculateItems = calculateItems;
         }
 
+        // refactor: GenerateFizzBuzzSeries method
         public IEnumerable<string> GenerateFizzBuzzSeries(int limit)
         {
-            IList<string> fizzbuzzList = new List<string>();
-
-            string fizzBuzzNumber = string.Empty;
+            var fizzbuzzList = new List<string>();
 
             for (int index = 1; index <= limit; index++)
             {
-               foreach(var calculateItem in _calculateItems)
+                var resultBuilder = new System.Text.StringBuilder();
+
+                foreach (var calculateItem in _calculateItems)
                 {
-                    fizzBuzzNumber += calculateItem.Calculate(index);
+                    resultBuilder.Append(calculateItem.Calculate(index));
                 }
 
-                if (string.IsNullOrEmpty(fizzBuzzNumber)) fizzBuzzNumber = index.ToString();
-
-                fizzbuzzList.Add(fizzBuzzNumber);
-                fizzBuzzNumber = string.Empty;
+                var result = resultBuilder.ToString();
+                fizzbuzzList.Add(string.IsNullOrEmpty(result) ? index.ToString() : result);
             }
 
             return fizzbuzzList;
