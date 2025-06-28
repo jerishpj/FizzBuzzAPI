@@ -25,6 +25,8 @@ namespace JerishPJ.FizzBuzz.WebAPI
         {
             services.AddControllers();
             
+            services.Configure<FizzBuzzSettings>(Configuration.GetSection("FizzBuzzSettings"));
+            
             services.AddScoped<ICalculateItem, FizzCalculation>();
             services.AddScoped<ICalculateItem, BuzzCalculation>();
             services.AddScoped<IFizzBuzzLogicProcessor, FizzBuzzLogicProcessor>();
