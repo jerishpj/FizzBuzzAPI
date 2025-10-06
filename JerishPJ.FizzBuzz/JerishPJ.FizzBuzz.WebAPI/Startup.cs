@@ -49,17 +49,14 @@ namespace JerishPJ.FizzBuzz.WebAPI
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-
-                // Reference : https://docs.microsoft.com/en-us/aspnet/core/web-api/handle-errors?view=aspnetcore-5.0
-                app.UseExceptionHandler("/error-local-development");
             }
             else
             {
                 app.UseExceptionHandler("/error");
+                // Optionally, add HSTS for production
+                app.UseHsts();
             }
 
-            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
-            // specifying the Swagger JSON endpoint.
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
@@ -68,9 +65,7 @@ namespace JerishPJ.FizzBuzz.WebAPI
             });
 
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
